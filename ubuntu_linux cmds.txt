@@ -1,0 +1,38 @@
+Linux or Ubuntu Commands:
+shell and terminal are most frequently used terms in linux.
+https://www.youtube.com/watch?v=VsxLeoDqH4E
+control+Alt+T is shortcut to open Terminal in Ubuntu.
+mkdir rmdir for files nano to open text and save as a file rm is to delete a file
+cd Documents gets into Documents folder
+.. is for one step back directory
+../.. is for 2 steps back or up parent folders
+-a for hidden files
+S for sorting ur direct by size
+l for long format to see size read,write privilages and etc
+ls Documents/*.html so that you get .html files with that extension only from Documents directory
+ls -lS > out.txt so it will create a file names out.txt an fill in the output data od the cmd into that file.
+ls -d */ lists out all the directories 
+man ls "gives u alist of all the commands you can use with ls, after u finish press q to quit the man terminal"
+https://www.youtube.com/watch?v=-sORAgCUAGI
+My Books folder
+you need to do cd My\ Books to get into it or "My Books" or single quotes also
+Contrl+d to end or come out of a file in CAT command.
+cat list1.txt to display the content of that file. cat 1.txt 2.txt it displays the content of both the files down below.
+cat -b 1.txt it adds numbers to the non blanck lines. 
+cat -n it adds line number to all the lines.
+cat -s list.txt it squeeses multiple blank lines to one blank lines and display. 
+cat -E txt.txt adds a $ symbol to the last char of each line.   man cat to know att opions with cat command
+cat > test123.txt then that file will be created and the content u type in will be saved in that. control+t or d to go out of it.
+if u cat to a file it will override the old data of teh file. but if u give cat >> test.txt then the data will be appended or added to the existing content.
+cat 1.txt 2.txt > 3.txt so the 3 will be created with bth the data in it.
+u can create a directory with mkdir names but u can not do 2 sub folders creation at a time like mkdir names/bob
+mkdir -p names/bob or mkdir --parents names/bob now the problem is solved and u can create them like this.
+mkdir -p names/{bob2,john,ram} u can create multiple directories but without spaces inbetween remember this.***
+*** ls -R this gives you the structure of the directories 
+rmdir a/b/c/d/e it deletes only the last e folder but if u give rmdir - p a/b/c/d/e it deletes all the folders 
+rmdir -pv a/b/c/d/e it shows u the structure how it deletes one after another
+if u have any files in a dir the rmdir will not work because the dir is not empty.
+rm -r a/b/c/d/e so use this to delete files and folders. -r is reccursive. -rv so get the description what is going on.
+so u could do rm -r a to delete a and all its contents.
+
+
