@@ -1,5 +1,6 @@
 Linux or Ubuntu Commands:
 shell and terminal are most frequently used terms in linux.
+pwd shows u d present/current working directory
 https://www.youtube.com/watch?v=VsxLeoDqH4E
 control+Alt+T is shortcut to open Terminal in Ubuntu.
 mkdir rmdir for files nano to open text and save as a file rm is to delete a file
@@ -34,5 +35,45 @@ rmdir -pv a/b/c/d/e it shows u the structure how it deletes one after another
 if u have any files in a dir the rmdir will not work because the dir is not empty.
 rm -r a/b/c/d/e so use this to delete files and folders. -r is reccursive. -rv so get the description what is going on.
 so u could do rm -r a to delete a and all its contents.
+cp is for copy command cp t.txt tr.txt then t data will be copied into tr file and will create tr if not present.
+cp 1.txt 2.txt dir123 so copies those 2 files into the dir123
+cp -i 1.txt 2.txt dir123 this asks you wether to overide the same file or not, u can say yes or no
+cp ../1.txt ../2.txt . this copies the two files from an above or up folder to the current folder which is indicated by a . in the end
+cp -R dir1 dir3 copies all the content of dir1 into dir3 when dir3 does not exist -R for reccuersive., but if the dir3 is already present then dir1 and its contents both awill b transferred.
+mv t.txt r.txt so this renames the file name.
+mv t.txt dir1 this moves the t.txt into the dir1
+mv t.txt dir1 overrides the data of t.txt in dir1 if it already exists.
+mv -i t.txt dir1 this asks u override yes or no
+mv dir1 dir2 moves dir1 and its contens into dir2, if dir2 does not exist then it renames the dir1 as dir2
+less text.txt so it shows u the data till the end of the terminal , use up, down arrows to navigate. space to go page by page. up to capital b or p, capital g to go to end of file, 
+1G to the top of the page.  "/book" this searches the word book, n for next word text, ?book for searching down to up, q to quit.
+touch file6 this create an empty file can be of any extension
+touch file6.txt if it already exists then it changes the timestamp of the file.
+***nano far.txt and type in ur data press control +O the it will be saved. 
+sudo mkdir newdir    this allows us to get the administrative permissions to do something when it says permission is denied. (super user cmd)
+apt-get install g++ to see wether u have privilages, cntrl shift T new tab in terminal.
+sudo -s, asks u pwd for the account.
+top -tells you which process is using more cpu utilisation, s to change the time delay, i to filter of idle processes, k to kill a process by process id.
+or "ps -ux" will give u d same, ps -aux gives u including user processes using u user also. or ps -U username gives u what processes r run by that specific user.
+ps -C processname gives u all instances of that process.
+pidof unity-control-center gives u the pid of that process
+kill 3265 the this will kill that process, kill -KILL 6543 is a much stronger case to kill a process, kill -9 6757 it is a sick kill cmd.
+echo hello world gives u hello world back as output.
+myvar="yashu"
+echo $myvar gives u yashu as output
+y=7
+echo "value of y is $y" gives u value of y is 7
+echo -e "some \t text" gives u some tab space text, \n is for new line
+r w x read write executable permissions of a file, o for others +,- is for adding or reducing permissions, g for groups, u for user, a stands for all 3 including ugo, d for directory in d starting when u press ls -l
+chmod o+x file this gives executable permission for others also.  chmod ug=rwx gives users and groups all rwx permissions (owner/user, group, others is d order)
+chmod u+rw,g+rw,o+r gives specific permissions
+ls -ld dir1 for long listing of a directory
+https://www.youtube.com/watch?v=WSIAiRTYE0c
+
+ 
+ 
+
+
+
 
 
